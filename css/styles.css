@@ -1,0 +1,337 @@
+
+*{
+  font-family: 'Patrick Hand';
+}
+
+body {
+  background: white;
+  
+}
+
+p, h3, h4{
+  font-family: Lora;
+}
+
+.homepage{
+  width:100%;
+  height: fit-content;
+}
+
+.header-line {
+  justify-content: center;
+  margin: auto;
+  display: flex;
+}
+
+/*  --------------------- liquid text  --------------------- */
+
+.liquid-name{
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin:auto;
+}
+
+
+
+.liquid-name h2 {
+  color: #fff;
+  font-size: 100px;
+  position: absolute;
+  margin-top: 0px;
+  margin-bottom: 0px;
+ top: 0px;
+ letter-spacing: 14px;
+}
+
+.liquid-name h2:nth-child(1) {
+  color: transparent;
+  -webkit-text-stroke: 1px #03a9f4;
+  background-color: transparent;
+}
+
+.liquid-name h2:nth-child(2) {
+  /* background-image: linear-gradient(to bottom, white, white, #abe4ff , #00628f); */
+  /* color: linear-gradient(to bottom, #abe4ff , #00628f); */
+  color: #00a6ff;
+  animation: animate 4s ease-in-out infinite;
+}
+
+.ocean-container{
+  justify-content: center;
+  display:flex;
+}
+
+.ocean{
+  height: 100px;
+    width: 800.5px;
+    background-color: #00a6ff;
+    position: absolute;
+    top: 105px;
+}
+
+@keyframes animate {
+  0%,
+  100% {
+    clip-path: polygon(
+      0% 45%,
+      16% 44%,
+      33% 50%,
+      54% 60%,
+      70% 61%,
+      84% 59%,
+      100% 52%,
+      100% 100%,
+      0% 100%
+    );
+  }
+
+  50% {
+    clip-path: polygon(
+      0% 60%,
+      15% 65%,
+      34% 66%,
+      51% 62%,
+      67% 50%,
+      84% 45%,
+      100% 46%,
+      100% 100%,
+      0% 100%
+    );
+  }
+}
+
+
+
+/* --------------------- scrambled text --------------------- */
+@import 'https://fonts.googleapis.com/css?family=Roboto+Mono:100';
+
+.scrambled-text{
+  height: 50px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin:auto;
+  flex-direction: column;
+}
+
+.header-line::after {
+  content: "";
+  height: 5px;
+  color: blue;
+  background-color: lightskyblue;
+  width: 800px !important;
+  display: block;
+  background-image: linear-gradient(45deg, black, blue,  transparent);
+  margin-top:20px;
+}
+
+.text{
+font-family: 'Roboto Mono', monospace;
+  font-weight: 100;
+  font-size: 28px;
+  color: black;
+}
+
+.dud{
+  color:grey;
+}
+
+/*----------about me--------*/
+.about-me {
+  max-width: 1000px;
+  display: flex;
+  margin: auto;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+
+.left-about {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 400px;
+}
+
+.right-about {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 20px;
+}
+
+
+h2.heading-titles{
+  font-size: 50px;
+  padding-left: 25px;
+  margin-bottom:0px;
+}
+.heading-titles::after {
+  content: "";
+  height: 5px;
+  color: blue;
+  background-color: lightskyblue;
+  width: 113px !important;
+  display: block;
+  background-image: linear-gradient(45deg, black, blue,  transparent);
+}
+
+
+
+.heading-subtitles {
+  font-size:25px;
+  margin-top:5px;
+  padding-left: 25px;v
+}
+
+img.sammy-about {
+  max-width: 400px;
+  width: auto;
+}
+
+p {
+  margin-bottom: 25px;
+  margin-top: 0px;
+  font-size: 20px;
+}
+
+
+/*------------------projects grid----------*/
+.project-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: left;
+  max-width: 1440px;
+  margin-bottom: 60px;
+}
+
+.project-link{
+  color:black;
+  text-decoration: none;
+}
+
+.project-block {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  max-width: 250px;
+    min-width: 250px;
+  padding: 20px;
+}
+
+.project-block:hover{
+  background-color: rgba(128,128,128,0.2);
+  transition: .2s ease-in-out;
+}
+
+
+
+.project-preview {
+  height: 200px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+h3.project-title {
+  margin-bottom: 0px;
+  font-style:bolder;
+}
+
+h3.project-title {
+  margin-bottom: 7px;
+  font-size: 20px;
+}
+
+p.project-description {
+  margin-bottom: 0px;
+  font-size: 17px;
+}
+
+
+/*-----contact-------*/
+#contact .social-icon {
+	padding-right: 30px;
+	transition: transform .2s;
+	height: 40px;
+	width: auto;
+	margin: 0 auto;
+}
+
+#contact .social-icon:hover {
+	transform: scale(1.5);
+}
+
+li {
+  height: fit-content;
+  list-style: none;
+}
+
+ul {
+  display: flex;
+  width: 400px;
+  flex-wrap: wrap;
+  text-decoration: none;
+  padding-left: 0px;
+  justify-content: space-evenly;
+}
+
+img.social-icon {
+  max-height: 50px;
+  margin: 10px;
+  transition: transform .2s;
+}
+
+.social-icon:hover {
+	transform: scale(1.2);
+}
+
+
+
+/*-------media queries------*/
+
+@media(max-width: 799px){
+  .liquid-name{
+    height:45px;
+  }
+  .liquid-name h2{
+    font-size:40px;
+  }
+  .about-me{
+    display:flex;
+    flex-direction:column;
+  }
+  img.sammy-about{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  img.social-icon{
+    max-height: 40px;
+  }
+  .left-about{
+    justify-content: center;
+    margin: auto;
+  }
+  img.sammy-about{
+    width: 100%;
+  }
+ 
+}
+
+@media(max-width:420px){
+  .liquid-name {
+      height: 125px;
+      text-align: center;
+  }
+  
+  .liquid-name h2 {
+      font-size: 50px;
+      justify-content: center;
+  }
+  
+  }
+
+ 
