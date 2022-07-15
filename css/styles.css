@@ -52,19 +52,96 @@ border-top: 2px solid #9198e5;
     justify-content: center;
   }
 
-  .page-header.neon .fake-margin{
+  .page-header.canvas .fake-margin{
     border-right: 2px solid white;
   }
 
-  .page-header.canvas .fake-margin{
-    border-right: 2px solid white;
+  .page-header.neon .fake-margin{
+    border-right: none;
   }
 
 
 
   .left-margin.neon, .left-margin.canvas{
-    border-right: 2px solid white;
+    border-right: none;
   }
+
+  .left-margin.neon{
+    background: linear-gradient(0deg, #000, #272727);
+  }
+/* .left-margin.notebook:before{
+  content: '';
+    position: inherit;
+  height: calc(4% + 4px);
+  z-index: 0;
+} */
+
+  /* .left-margin.neon:before{
+    content: '';
+    position: inherit;
+    left: -2px;
+    top: -2px;
+    background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00,#ffff00, #ff0000, #fb0094, 
+      #0000ff, #00ff00,#ffff00, #ff0000);
+    background-size: 400%;
+    width: calc(100% + 4px);
+    height: calc(6% + 4px);
+    z-index: 0;
+    animation: steam 20s linear infinite;
+  } */
+
+  .projectsNeon .heading-titles{
+    padding-left:15px;
+  }
+
+  .fullSheet.notebook .projectsNeon{
+    display:none;
+  }
+
+
+
+
+.left-margin.neon:after{
+    content: '';
+    position: inherit;
+    left: -2px;
+    top: -2px;
+    background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00,#ffff00, #ff0000, #fb0094, 
+      #0000ff, #00ff00,#ffff00, #ff0000);
+    background-size: 400%;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    z-index: 0;
+    animation: steam 20s linear infinite;
+  }
+
+
+@keyframes steam {
+	0% {
+		background-position: 0 0;
+	}
+	50% {
+		background-position: 400% 0;
+	}
+	100% {
+		background-position: 0 0;
+	}
+}
+
+.left-margin.neon:before, .left-margin.neon:after {
+	filter: blur(50px);
+}
+
+
+
+
+
+
+
+
+
+
+
 
   .left-margin.canvas, 
   .page-header.canvas .fake-margin,
@@ -74,6 +151,11 @@ border-top: 2px solid #9198e5;
 
   .binder-paper.neon, .binder-paper.canvas{
     border-top:none;
+  }
+
+  .page-header.neon{
+    background-color:black;
+    z-index:-1;
   }
 
 
@@ -101,6 +183,12 @@ select {
 }
 .navigation{
   margin-top:15px;
+  
+}
+
+.neon .navigation{
+  /* position:absolute; */
+  background-color:black;
 }
 .nav-items{
   max-width:213px;
@@ -263,14 +351,16 @@ p, h3, h4{
 .page-header .todaysTime{
 display:none;
 }
-
 .page-header.neon .todaysTime{
   display:block;
   }
- 
   .page-header.neon .todaysDate{
     display:none;
-    }
+  }
+
+  .fullSheet.neon .circle,  .fullSheet.neon .circle-container{
+    display:none;
+  }
 
 
 /*  --------------------- liquid text  --------------------- */
