@@ -94,6 +94,10 @@ select {
   font-size:16px;
 }
 
+li.nav-link:nth-child(4) {
+  margin-bottom: 0px;
+}
+
 .social-links {
   max-width: 228px;
   display: flex;
