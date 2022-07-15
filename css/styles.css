@@ -92,11 +92,36 @@ border-top: 2px solid #9198e5;
     animation: steam 20s linear infinite;
   }
 
-  .projectsNeon .heading-titles{
+  .projectsCanvas .heading-titles{
     padding-left:15px;
+    font-family: 'Titan One',cursive;
+    color: deepskyblue;
+  }
+
+  .fullSheet.canvas .right-about-me{
+    /* font-family: 'Titan One',cursive; */
+    color: black;
+    font-size: 20px;
+  }
+
+  .fullSheet.canvas .heading-subtitles{
+    font-family: 'Titan One',cursive;
+    color: deepskyblue;
   }
 
   .fullSheet.notebook .projectsNeon{
+    display:none;
+  }
+
+  .fullSheet.neon .projectsCanvas{
+    display:none;
+  }
+
+  .fullSheet.notebook .projectsCanvas{
+    display:none;
+  }
+
+  .fullSheet.canvas .projectsNeon{
     display:none;
   }
 
@@ -1058,7 +1083,25 @@ img.social-icon {
     100%{border-radius:66% 34% 33% 67% / 65% 73% 27% 35%}
     }
 
-    .notebook .blobs_background_1{
+    .notebook .blobs_background_1,
+    .notebook .blobs_background_2,
+    .notebook .blobs_background_3,
+    .notebook .blobs_background_4,
+    .notebook .blobs_background_5,
+    .notebook .blobs_background_6,
+    .notebook .blobs_background_7
+    {
+      display:none;
+    }
+
+    .neon .blobs_background_1,
+    .neon .blobs_background_2,
+    .neon .blobs_background_3,
+    .neon .blobs_background_4,
+    .neon .blobs_background_5,
+    .neon .blobs_background_6,
+    .neon .blobs_background_7
+    {
       display:none;
     }
 
