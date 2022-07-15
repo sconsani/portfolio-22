@@ -1,6 +1,8 @@
 
 :root{
   --handwriting: 'Patrick Hand', cursive;
+  --neon-text-color: #f40;
+  --neon-border-color: #08f;
 }
 
 
@@ -76,7 +78,7 @@ border-top: 2px solid #9198e5;
   z-index: 0;
 } */
 
-  /* .left-margin.neon:before{
+  .left-margin.neon:before{
     content: '';
     position: inherit;
     left: -2px;
@@ -88,7 +90,7 @@ border-top: 2px solid #9198e5;
     height: calc(6% + 4px);
     z-index: 0;
     animation: steam 20s linear infinite;
-  } */
+  }
 
   .projectsNeon .heading-titles{
     padding-left:15px;
@@ -99,6 +101,13 @@ border-top: 2px solid #9198e5;
   }
 
   .page-header.notebook .blobText, .page-header.neon .blobText{
+    display:none;
+  }
+
+  .page-header.notebook .neon-title{
+    display:none;
+  }
+  .page-header.canvas .neon-title{
     display:none;
   }
 
@@ -135,16 +144,6 @@ border-top: 2px solid #9198e5;
 .left-margin.neon:before, .left-margin.neon:after {
 	filter: blur(50px);
 }
-
-
-
-
-
-
-
-
-
-
 
 
   .left-margin.canvas, 
@@ -958,4 +957,78 @@ img.social-icon {
     top: 174px;
     left: 819px;
     display:flex;
+  }
+
+  .page-header.neon .liquid-name{
+    display:none;
+  }
+
+  .neon-title {
+    display: flex;
+    justify-content: center;
+}
+
+  /*----neon name-----*/
+.neonName {
+  font-family: 'Exo 2', sans-serif;
+    font-size: 57px;
+    font-weight: 200;
+    font-style: italic;
+    color: #fff;
+    padding: 2rem 13rem 2.5rem;
+    border: 0.4rem solid #fff;
+    border-radius: 2rem;
+    text-transform: uppercase;
+    animation: flicker 1.5s infinite alternate;
+    /* margin-top: 66px; */
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 0px;
+    display: inline-block;
+    padding: 36px 108px;
+    text-align: center;
+  }
+
+  
+  .neonName::-moz-selection {
+    background-color: var(--neon-border-color);
+    color: var(--neon-text-color);
+  }
+  
+  .neonName::selection {
+    background-color: var(--neon-border-color);
+    color: var(--neon-text-color);
+  }
+  
+  .neonName:focus {
+    outline: none;
+  }
+  
+  /* Animate neon flicker */
+  @keyframes flicker {
+      
+      0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+        
+          text-shadow:
+              -0.2rem -0.2rem 1rem #fff,
+              0.2rem 0.2rem 1rem #fff,
+              0 0 2rem var(--neon-text-color),
+              0 0 4rem var(--neon-text-color),
+              0 0 6rem var(--neon-text-color),
+              0 0 8rem var(--neon-text-color),
+              0 0 10rem var(--neon-text-color);
+          
+          box-shadow:
+              0 0 .5rem #fff,
+              inset 0 0 .5rem #fff,
+              0 0 2rem var(--neon-border-color),
+              inset 0 0 2rem var(--neon-border-color),
+              0 0 4rem var(--neon-border-color),
+              inset 0 0 4rem var(--neon-border-color);        
+      }
+      
+      20%, 24%, 55% {        
+          text-shadow: none;
+          box-shadow: none;
+      }    
   }
