@@ -116,17 +116,9 @@ if(cHour<10)
   cHour = '0'+cHour;
 }
 
-  todayTime = cHour + ':' + cMin;
+todayTime = cHour + ':' + cMin;
 console.log(todayTime);
   $(this).find('.todaysTime').text(todayTime);
-
-  // var hidingDate = document.querySelector(".todaysDate");
-  // var headerNeon = document.querySelector(".neon");
-
-  // if (headerNeon.classList.contains("neon")){
-  //   hidingDate.style.display = "none";
-  // } 
-
 
 });
 
@@ -195,33 +187,4 @@ if (selection === "Notebook"){
     }
 
 });
-
-
-
-
-
-
-//     else if (leftMargin.classList.contains("Canvas")){
-//       leftMargin.classList.remove("Canvas");
-//       leftMargin.classList.add("Neon");
-
-//   }else if (binderPaper.classList.contains("Canvas")){
-//     binderPaper.classList.remove("Canvas");
-//     binderPaper.classList.add("Neon");
-//   }
-//   else if (binderPaper.classList.contains("Canvas")){
-//     binderPaper.classList.remove("Canvas");
-//     binderPaper.classList.add("Neon");
-//   }
-// } else if (selection === "Canvas"){
-//   if (leftMargin.classList.contains("Notebook")){
-//     leftMargin.classList.remove("Notebook");
-//     leftMargin.classList.add("Canvas");
-//   }else if (binderPaper.classList.contains("Neon")){
-//     binderPaper.classList.remove("Neon");
-//     binderPaper.classList.add("Canvas");
-//   }
-// }
-// });
-
 

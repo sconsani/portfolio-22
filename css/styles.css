@@ -66,6 +66,12 @@ border-top: 2px solid #9198e5;
     border-right: 2px solid white;
   }
 
+  .left-margin.canvas, 
+  .page-header.canvas .fake-margin,
+  .page-header.canvas{
+    background: #fbfef3
+  }
+
   .binder-paper.neon, .binder-paper.canvas{
     border-top:none;
   }
@@ -194,11 +200,32 @@ li.social-li.dashed{
   
   .canvas{
     color:green;
-    background:yellow;
   }
+
+  /* .page-header.canvas{
+    background-image: url("../designHands.jpg");
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center;
+  } */
+
+
+
+  .fullSheet.canvas{
+    background-image: url("../museum.jpg");
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center;
+
+  }
+
+
 
   .page-header.neon .text{
     color:white;
+  }
+  .page-header.canvas .text{
+    color:green;
   }
 
 p, h3, h4{
@@ -278,6 +305,15 @@ display:none;
   /* color: linear-gradient(to bottom, #abe4ff , #00628f); */
   color: #00a6ff;
   animation: animate 4s ease-in-out infinite;
+}
+
+.canvas .liquid-name h2:nth-child(1){
+  color:transparent;
+  -webkit-text-stroke: 1px green;
+
+}
+.canvas .liquid-name h2:nth-child(2){
+  color:green;
 }
 
 .ocean-container{
