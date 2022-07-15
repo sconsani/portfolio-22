@@ -99,6 +99,35 @@ $(document).ready(function () {
   today = mm+'/'+dd+'/'+yyyy;
 
   $(this).find('.todaysDate').text(today);
+
+
+
+  var todayTime = new Date();
+  var cHour = todayTime.getHours();
+  var cMin = todayTime.getMinutes(); 
+  console.log(todayTime);
+
+if(cMin<10)
+{
+  cMin = '0'+cMin;
+}
+if(cHour<10)
+{
+  cHour = '0'+cHour;
+}
+
+  todayTime = cHour + ':' + cMin;
+console.log(todayTime);
+  $(this).find('.todaysTime').text(todayTime);
+
+  // var hidingDate = document.querySelector(".todaysDate");
+  // var headerNeon = document.querySelector(".neon");
+
+  // if (headerNeon.classList.contains("neon")){
+  //   hidingDate.style.display = "none";
+  // } 
+
+
 });
 
 
