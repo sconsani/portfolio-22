@@ -16,19 +16,31 @@
     <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
 
      <!-- google fonts -->
-     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
-     <link rel="preconnect" href="https://fonts.gstatic.com"> 
-     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
- 
-     <link href="https://fonts.googleapis.com/css?family=Lora:400,700" rel="stylesheet" type="text/css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
      <!--  -->
-
-    <script defer src="js.js"></script>
+     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+    <script defer src="scripts.js"></script>
     <!--  -->
 </head>
 
 <body>
-  <div class = "homepage">
+  <div class = "page-header">
+    <div class = "fake-margin">
+      <p class = "change-theme-text">Change Page Theme</p>
+      <div class="theme-select">
+        <!-- <label for = "theme">Change the Site Theme</label> -->
+        <select name = "selection" id = "sammytheme">
+          <option value = "Notebook">Notebook</option>
+          <option value = "Neon">Neon</option>
+          <option value = "Canvas">Canvas</option>
+        </select>
+        <label for = "theme">*currently being designed!*</label> 
+      </div>
+    </div>
+    <div class = "topOfPage">
+      <div class = "todaysDate"></div>
       <div class="liquid-name">
           <h2>SAMMY CONSANI</h2>
           <h2>SAMMY CONSANI</h2>
@@ -37,96 +49,124 @@
       <div class="scrambled-text">
         <div class="text"></div>
       </div>
-      <div class = "header-line">
-
-      </div>
-  </div>
-</body>
-
-<section id="about-me">
-  <div class = "about-me">
-    <div class = "left-about">
-      <img src = "img/sammy-about.jpg" class = "sammy-about">
-    </div>
-    <div class = "right-about">
-      <p>I am from the San Francisco Bay Area and graduated from UCLA with a degree in Fine Arts. My previous focus in art and design led me to a 5 year career in graphic design, product photography and website content management.</p>
-      <p>As I transitioned into managing the two retail websites I discovered my interests in problem solving, user experience and translating my knowledge of design into beautifully coded websites.</p>
-      <p>When I'm not creating, I love to travel, go camping, skateboarding, juggling, and reading books about psychology and neuroscience.</p>
-      <ul>             
-        <li><a href="https://sammyconsani.medium.com" target = "_blank"><img  class = "social-icon" src="img/medium.png" alt="Medium Blog"  /></a>
-            </li>
-        <li><a href="https://www.linkedin.com/in/sammy-consani/" target = "_blank"><img class = "social-icon" src="img/linkedin.png" alt="LinkedIn"  /></a>
-        </li>
-        <li><a href="https://www.sammyconsani.com" target = "_blank" ><img  class = "social-icon" src = "img/sc-com-icon.png" alt = "Art Portfolio" /></a>
-        </li>
-        <li><a href="https://github.com/sconsani" target = "_blank"><img class = "social-icon" src="img/github.png" alt="Github"   /></a>
-            </li>
-    </ul>
     </div>
   </div>
-</section>
 
-<h2 class = "heading-titles">Projects</h2>
-<p class = "heading-subtitles">A collection of recent coding projects and challenges from General Assembly, Front End Mentor, SkillCrush and JavaScript30.</p>
+  <div class = "binder-paper">
+    <div class = "left-margin">
+        <div class = "navigation">
+              <ul class = "nav-items">
+                <li class = "nav-link">about</li>
+                <li class = "nav-link">projects</li>
+                <li class = "nav-link">skills</li>
+                <li class = "nav-link">contact</li>
+              </ul>
+        </div>
+        <div class = "side-footer">
+              <ul class = "social-links">             
+                <li class = "social-li"><a href="https://sammyconsani.medium.com" target = "_blank"><img  class = "social-icon" src="img/medium.png" alt="Medium Blog"  /></a>
+                    </li>
+                <li class = "social-li dashed"><a href="https://www.linkedin.com/in/sammy-consani/" target = "_blank"><img class = "social-icon" src="img/linkedin.png" alt="LinkedIn"  /></a>
+                </li>
+                <li class = "social-li dashed"><a href="https://www.sammyconsani.com" target = "_blank" ><img  class = "social-icon" src = "img/sc-com-icon.png" alt = "Art Portfolio" /></a>
+                </li>
+                <li class = "social-li"><a href="https://github.com/sconsani" target = "_blank"><img class = "social-icon" src="img/github.png" alt="Github"   /></a>
+                    </li>
+            </ul>
+        </div>
+    </div>
 
-  <div class = "project-container">
 
-    <a class = "project-link" href = "https://sconsani.github.io/css-js-clock/" target = "_blank">
-      <div class = "project-block">
-        <div class = "project-preview" style = "background-image:url(img/clock-graphic.jpg)"></div>
-        <h3 class = "project-title">Ticking Clock
-          <br>(html/css/javaScript)</h3>
-        <p class = "project-description">Watch a beautiful analog clock tick away in front of a snowy day photo in Denver, CO</p>
+  <div class = 'fullSheet'>
+      
+
+
+      <section id="about-me">
+        <div class = "about-me">
+          <div class = "left-about">
+            <img src = "me.png" class = "sammy-about">
+          </div>
+          <div class = "right-about">
+            <p class = "right-about-me">I am from the San Francisco Bay Area and graduated from UCLA with a degree in Fine Arts. My previous focus in art and design led me to a 5 year career in graphic design, product photography and website content management.<br>
+            As I transitioned into managing the two retail websites I discovered my interests in problem solving, user experience and translating my knowledge of design into beautifully coded websites.<br>
+            When I'm not creating, I love to travel, go camping, skateboarding, juggling, and reading books about psychology and neuroscience.</p>
+            
+          </div>
+        </div>
+      </section>
+
+<div class = "circle-container">
+      <div class="circle">
+        <h2 class = "heading-titles circle-action">Projects <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 152.9 43.4" style="enable-background:new 0 0 152.9 43.4;" xml:space="preserve">
+          <path d="M151.9,13.6c0,0,3.3-9.5-85-8.3c-97,1.3-58.3,29-58.3,29s9.7,8.1,69.7,8.1c68.3,0,69.3-23.1,69.3-23.1 s1.7-10.5-14.7-18.4"/>
+        </svg></h2>
       </div>
-    </a>
-    <a class = "project-link" href = "https://sconsani.github.io/Javascript-Drum-Kit-1-30/" target = "_blank">
-      <div class = "project-block">
-        <div class = "project-preview" style = "background-image:url(img/drum-graphic.jpg)"></div> 
-        <h3 class = "project-title">Interactive Drum Kit <br>(html/css/javaScript)</h3>
-        <p class = "project-description">Have fun and play drums with the keys!</p>
-      </div>
-    </a>
-
-    <a class = "project-link" href = "https://sconsani.github.io/Flex-Panel-Gallery/" target = "_blank">
-      <div class = "project-block">
-        <div class = "project-preview" style = "background-image:url(img/travel-panel-graphic.jpg)"></div> 
-        <h3 class = "project-title">Travel Flex Panels<br>(html/css/javaScript)</h3>
-        <p class = "project-description">Watch the panels expand on click.</p>
-      </div>
-    </a>
-
-    <a class = "project-link" href = "https://sconsani.github.io/Subscription-Calendar/" target = "_blank">
-      <div class = "project-block">
-        <div class = "project-preview" style = "background-image:url(img/subscription-graphic.jpg)"></div> 
-        <h3 class = "project-title">Subscription Calendar<br>(html/css/javaScript)</h3>
-        <p class = "project-description">Try out my subscription calendar to get a grand total price.</p>
-      </div>
-    </a>
-
-    <a class = "project-link" href = "https://sconsani.github.io/css-gradient-grid-test/" target = "_blank">
-      <div class = "project-block">
-        <div class = "project-preview" style = "background-image:url(img/gradient-graphic.jpg)"></div>
-        <h3 class = "project-title">Gradient CSS Test<br>(html/css/javaScript)</h3>
-        <p class = "project-description">CSS colors and Gradients!</p>
-      </div>
-    </a>
-
-    <a class = "project-link" href = "https://sammy-doodler.herokuapp.com" target = "_blank">
-      <div class = "project-block">
-        <div class = "project-preview" style = "background-image:url(img/doodler-graphic.jpg)"></div>
-        <h3 class = "project-title">Doodler <br>(html/css/javaScript)</h3> <p class = "project-description">Create your very own version of my illustrated doodle characters!</p>
-      </div>
-    </a>
-
-    <a class = "project-link" href = "https://sconsani.github.io/Project-0/" target = "_blank">
-      <div class = "project-block">
-        <div class = "project-preview" style = "background-image:url(img/fast-money-graphic.jpg)"></div> 
-        <h3 class = "project-title">Fast Money Game <br>(html/css/javaScript)</h3>
-        <p class = "project-description">Play trivia and score at least 200 points total between Player 1 and Player 2 to win!</p>
-      </div>
-    </a>
 </div>
+      <section id = "projects">
+        <p class = "heading-subtitles">A collection of recent coding projects and challenges from General Assembly, Front End Mentor, SkillCrush and JavaScript30.</p>
+    
 
+        <div class = "project-container">
 
+          <a class = "project-link" href = "https://sconsani.github.io/css-js-clock/" target = "_blank">
+            <div class = "project-block">
+              <div class = "project-preview" style = "background-image:url(img/clock-graphic.jpg)"></div>
+              <h3 class = "project-title">Ticking Clock
+                <br>(html/css/javaScript)</h3>
+              <p class = "project-description">Watch a beautiful analog clock tick away in front of a snowy day photo in Denver, CO</p>
+            </div>
+          </a>
+          <a class = "project-link" href = "https://sconsani.github.io/Javascript-Drum-Kit-1-30/" target = "_blank">
+            <div class = "project-block">
+              <div class = "project-preview" style = "background-image:url(img/drum-graphic.jpg)"></div> 
+              <h3 class = "project-title">Interactive Drum Kit <br>(html/css/javaScript)</h3>
+              <p class = "project-description">Have fun and play drums with the keys!</p>
+            </div>
+          </a>
 
+          <a class = "project-link" href = "https://sconsani.github.io/Flex-Panel-Gallery/" target = "_blank">
+            <div class = "project-block">
+              <div class = "project-preview" style = "background-image:url(img/travel-panel-graphic.jpg)"></div> 
+              <h3 class = "project-title">Travel Flex Panels<br>(html/css/javaScript)</h3>
+              <p class = "project-description">Watch the panels expand on click.</p>
+            </div>
+          </a>
+
+          <a class = "project-link" href = "https://sconsani.github.io/Subscription-Calendar/" target = "_blank">
+            <div class = "project-block">
+              <div class = "project-preview" style = "background-image:url(img/subscription-graphic.jpg)"></div> 
+              <h3 class = "project-title">Subscription Calendar<br>(html/css/javaScript)</h3>
+              <p class = "project-description">Try out my subscription calendar to get a grand total price.</p>
+            </div>
+          </a>
+
+          <a class = "project-link" href = "https://sconsani.github.io/css-gradient-grid-test/" target = "_blank">
+            <div class = "project-block">
+              <div class = "project-preview" style = "background-image:url(img/gradient-graphic.jpg)"></div>
+              <h3 class = "project-title">Gradient CSS Test<br>(html/css/javaScript)</h3>
+              <p class = "project-description">CSS colors and Gradients!</p>
+            </div>
+          </a>
+
+          <a class = "project-link" href = "https://sammy-doodler.herokuapp.com" target = "_blank">
+            <div class = "project-block">
+              <div class = "project-preview" style = "background-image:url(img/doodler-graphic.jpg)"></div>
+              <h3 class = "project-title">Doodler <br>(html/css/javaScript)</h3> <p class = "project-description">Create your very own version of my illustrated doodle characters!</p>
+            </div>
+          </a>
+
+          <a class = "project-link" href = "https://sconsani.github.io/Project-0/" target = "_blank">
+            <div class = "project-block">
+              <div class = "project-preview" style = "background-image:url(img/fast-money-graphic.jpg)"></div> 
+              <h3 class = "project-title">Fast Money Game <br>(html/css/javaScript)</h3>
+              <p class = "project-description">Play trivia and score at least 200 points total between Player 1 and Player 2 to win!</p>
+            </div>
+          </a>
+      </div>
+    </section>
+  </div>
+ 
+
+</div>
+</body>
 </html>
