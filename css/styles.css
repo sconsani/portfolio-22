@@ -64,6 +64,8 @@ border-top: 2px solid #9198e5;
 
 
 
+
+
   .left-margin.neon, .left-margin.canvas{
     border-right: none;
   }
@@ -340,6 +342,7 @@ li.social-li.dashed{
 
   .page-header.neon .text{
     color:white;
+    display:none;
   }
   .page-header.canvas .text{
     color:green;
@@ -587,6 +590,40 @@ img.sammy-about {
   max-height: 400px;
   width: auto;
 }
+
+img.neon-room{
+  max-height: 400px;
+  width: auto;
+}
+
+img.my-canvas{
+  max-height: 400px;
+  width: auto;
+}
+
+.fullSheet.neon .sammy-about{
+  display:none;
+}
+.fullSheet.neon .my-canvas{
+  display:none;
+}
+
+.fullSheet.notebook .neon-room{
+  display:none;
+}
+.fullSheet.notebook .my-canvas{
+  display:none;
+}
+
+.fullSheet.canvas .neon-room{
+  display:none;
+}
+.fullSheet.canvas .sammy-about{
+  display:none;
+}
+
+
+
 
 .right-about-me {
   margin-bottom: 25px;
