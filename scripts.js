@@ -129,6 +129,7 @@ var leftMargin = document.querySelector(".left-margin");
 var binderPaper = document.querySelector(".binder-paper");
 var fullSheet = document.querySelector(".fullSheet");
 var pageHeader = document.querySelector(".page-header");
+var thirdSection = document.querySelector(".third-section");
 
 sammytheme.addEventListener("change", function (e){
 selection = e.target.value;
@@ -139,16 +140,19 @@ if (selection === "Notebook"){
   binderPaper.classList.remove("neon");
   fullSheet.classList.remove("neon");
   pageHeader.classList.remove("neon");
+  thirdSection.classList.remove("neon");
 
   leftMargin.classList.remove("canvas");
   binderPaper.classList.remove("canvas");
   fullSheet.classList.remove("canvas");
   pageHeader.classList.remove("canvas");
+  thirdSection.classList.remove("canvas");
 
   leftMargin.classList.add("notebook");
   binderPaper.classList.add("notebook");
   fullSheet.classList.add("notebook");
   pageHeader.classList.add("notebook");
+  thirdSection.classList.add("notebook");
 
 } 
 
@@ -157,16 +161,19 @@ if (selection === "Notebook"){
       binderPaper.classList.remove("notebook");
       fullSheet.classList.remove("notebook");
       pageHeader.classList.remove("notebook");
+      thirdSection.classList.remove("notebook");
 
       leftMargin.classList.remove("canvas");
       binderPaper.classList.remove("canvas");
       fullSheet.classList.remove("canvas");
       pageHeader.classList.remove("canvas");
+      thirdSection.classList.remove("canvas");
 
       leftMargin.classList.add("neon");
       binderPaper.classList.add("neon");
       fullSheet.classList.add("neon");
       pageHeader.classList.add("neon");
+      thirdSection.classList.add("neon");
     }
 
   else if (selection === "Canvas"){
@@ -174,16 +181,19 @@ if (selection === "Notebook"){
       binderPaper.classList.remove("notebook");
       fullSheet.classList.remove("notebook");
       pageHeader.classList.remove("notebook");
+      thirdSection.classList.remove("notebook");
 
       leftMargin.classList.remove("neon");
       binderPaper.classList.remove("neon");
       fullSheet.classList.remove("neon");
       pageHeader.classList.remove("neon");
+      thirdSection.classList.remove("neon");
 
       leftMargin.classList.add("canvas");
       binderPaper.classList.add("canvas");
       fullSheet.classList.add("canvas");
-      pageHeader.classList.add("canvas")
+      pageHeader.classList.add("canvas");
+      thirdSection.classList.add("canvas");
     }
 
 });
