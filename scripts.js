@@ -124,39 +124,39 @@ console.log(todayTime);
 
 
 var sammytheme = document.querySelector("#sammytheme");
-var selection = "Notebook";
+var selection = "canvas";
 var leftMargin = document.querySelector(".left-margin");
 var binderPaper = document.querySelector(".binder-paper");
 var fullSheet = document.querySelector(".fullSheet");
 var pageHeader = document.querySelector(".page-header");
 var thirdSection = document.querySelector(".third-section");
 
+
 sammytheme.addEventListener("change", function (e){
 selection = e.target.value;
 console.log(selection);
 
-if (selection === "Notebook"){
-  leftMargin.classList.remove("neon");
-  binderPaper.classList.remove("neon");
-  fullSheet.classList.remove("neon");
-  pageHeader.classList.remove("neon");
-  thirdSection.classList.remove("neon");
+if (selection === "canvas"){
+    leftMargin.classList.remove("notebook");
+    binderPaper.classList.remove("notebook");
+    fullSheet.classList.remove("notebook");
+    pageHeader.classList.remove("notebook");
+    thirdSection.classList.remove("notebook");
 
-  leftMargin.classList.remove("canvas");
-  binderPaper.classList.remove("canvas");
-  fullSheet.classList.remove("canvas");
-  pageHeader.classList.remove("canvas");
-  thirdSection.classList.remove("canvas");
+    leftMargin.classList.remove("neon");
+    binderPaper.classList.remove("neon");
+    fullSheet.classList.remove("neon");
+    pageHeader.classList.remove("neon");
+    thirdSection.classList.remove("neon");
 
-  leftMargin.classList.add("notebook");
-  binderPaper.classList.add("notebook");
-  fullSheet.classList.add("notebook");
-  pageHeader.classList.add("notebook");
-  thirdSection.classList.add("notebook");
+    leftMargin.classList.add("canvas");
+    binderPaper.classList.add("canvas");
+    fullSheet.classList.add("canvas");
+    pageHeader.classList.add("canvas");
+    thirdSection.classList.add("canvas");
+  }
 
-} 
-
-  else if (selection === "Neon"){
+  else if (selection === "neon"){
       leftMargin.classList.remove("notebook");
       binderPaper.classList.remove("notebook");
       fullSheet.classList.remove("notebook");
@@ -176,25 +176,27 @@ if (selection === "Notebook"){
       thirdSection.classList.add("neon");
     }
 
-  else if (selection === "Canvas"){
-      leftMargin.classList.remove("notebook");
-      binderPaper.classList.remove("notebook");
-      fullSheet.classList.remove("notebook");
-      pageHeader.classList.remove("notebook");
-      thirdSection.classList.remove("notebook");
-
-      leftMargin.classList.remove("neon");
-      binderPaper.classList.remove("neon");
-      fullSheet.classList.remove("neon");
-      pageHeader.classList.remove("neon");
-      thirdSection.classList.remove("neon");
-
-      leftMargin.classList.add("canvas");
-      binderPaper.classList.add("canvas");
-      fullSheet.classList.add("canvas");
-      pageHeader.classList.add("canvas");
-      thirdSection.classList.add("canvas");
-    }
+  else if (selection === "notebook"){
+    leftMargin.classList.remove("neon");
+    binderPaper.classList.remove("neon");
+    fullSheet.classList.remove("neon");
+    pageHeader.classList.remove("neon");
+    thirdSection.classList.remove("neon");
+  
+    leftMargin.classList.remove("canvas");
+    binderPaper.classList.remove("canvas");
+    fullSheet.classList.remove("canvas");
+    pageHeader.classList.remove("canvas");
+    thirdSection.classList.remove("canvas");
+  
+    leftMargin.classList.add("notebook");
+    binderPaper.classList.add("notebook");
+    fullSheet.classList.add("notebook");
+    pageHeader.classList.add("notebook");
+    thirdSection.classList.add("notebook");
+  
+  } 
+ 
 
 });
 
