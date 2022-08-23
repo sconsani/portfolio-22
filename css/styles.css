@@ -70,9 +70,9 @@ border-top: 2px solid #9198e5;
     border-right: none;
   }
 
-  .left-margin.neon{
+  /* .left-margin.neon{
     background: linear-gradient(0deg, #000, #272727);
-  }
+  } */
 /* .left-margin.notebook:before{
   content: '';
     position: inherit;
@@ -89,7 +89,7 @@ border-top: 2px solid #9198e5;
       #0000ff, #00ff00,#ffff00, #ff0000);
     background-size: 400%;
     width: calc(100% + 4px);
-    height: calc(6% + 4px);
+    /* height: calc(6% + 4px); */
     z-index: 0;
     animation: steam 20s linear infinite;
   }
@@ -311,7 +311,7 @@ a:active {
   text-decoration: none !important;
 }
 
-.neon a li.nav-link.projects {
+.neon a li.nav-link.projects, .neon a li.nav-link.about {
   color: white;
 }
 
@@ -1057,12 +1057,14 @@ img.social-icon {
   .neon-title {
     display: flex;
     justify-content: center;
+    height: 120px;
 }
 
   /*----neon name-----*/
 .neonName {
-  font-family: 'Exo 2', sans-serif;
-    font-size: 57px;
+  font-family: 'Kalam', cursive;
+
+    font-size: 46px;
     font-weight: 200;
     font-style: italic;
     color: #fff;
@@ -1076,7 +1078,7 @@ img.social-icon {
     margin-right: 20px;
     margin-bottom: 0px;
     display: inline-block;
-    padding: 36px 108px;
+    padding: 14px 108px;
     text-align: center;
   }
 
@@ -1098,7 +1100,7 @@ img.social-icon {
   /* Animate neon flicker */
   @keyframes flicker {
       
-      0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+      0%, 25%, 56%, 100% {
         
           text-shadow:
               -0.2rem -0.2rem 1rem #fff,
