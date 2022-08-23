@@ -670,15 +670,19 @@ img.my-canvas{
 .fullSheet.notebook .neon-room{
   display:none;
 }
-.fullSheet.notebook .my-canvas{
+
+.fullSheet.notebook .sammy-about{
   display:none;
 }
+
 .fullSheet.canvas .neon-room{
   display:none;
 }
-.fullSheet.canvas .sammy-about{
+
+.fullSheet.canvas .my-canvas{
   display:none;
 }
+
 
 
 .third-section {
@@ -725,7 +729,7 @@ br{
 .project-link{
   color:black;
   text-decoration: none;
-  margin-right: 47px;
+  margin-right: 40px;
 }
 
 
@@ -1288,7 +1292,6 @@ img.social-icon {
     max-width: 250px;
       min-width: 250px;
     padding: 20px;
-   
     margin-bottom: 43px;
   }
 
@@ -1296,4 +1299,5 @@ img.social-icon {
     background-color:white;
     min-height: 362px;
     max-height: 362px;
+    border: 3px dashed black;
   }
