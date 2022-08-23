@@ -681,7 +681,17 @@ img.my-canvas{
 }
 
 
+.third-section {
+  padding-top: 20px;
+}
 
+.binder-paper.third-section.canvas {
+  border-top: 2px solid black;
+}
+
+h2.heading-titles {
+  margin-top: 0px;
+}
 
 .right-about-me {
   margin-bottom: 25px;
@@ -851,11 +861,11 @@ img.social-icon {
   
   }
   .circle {
-    transform: translate(-50%, -50%);
+    /* transform: translate(-50%, -50%); */
     text-align: right;
     width: fit-content !important;
     display: inline-block;
-    padding-left: 220px;
+    /* padding-left: 220px; */
     min-height: fit-content !important;
     z-index: unset;
     min-height: fit-content;
@@ -902,10 +912,6 @@ img.social-icon {
     opacity: 1;
     transition: opacity 0s, stroke-dashoffset 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
   }
-
-  section#about-me {
-    margin-bottom:52px;
-}
 
 .circle-container {
   height: 64px;
