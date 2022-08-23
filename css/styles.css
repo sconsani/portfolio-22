@@ -241,6 +241,10 @@ li.nav-link:nth-child(4) {
   margin-bottom: 0px;
 }
 
+a li.nav-link.projects::visited{
+  text-decoration: none;
+}
+
 .social-links {
   max-width: 228px;
   display: flex;
@@ -291,6 +295,23 @@ li.social-li.dashed{
 
 .fullSheet.neon {
   background: black;
+  color: white;
+}
+
+li.nav-link.contact {
+  margin-bottom: 0;
+}
+
+a{
+  text-decoration: none !important;
+  color: black;
+}
+
+a:active {
+  text-decoration: none !important;
+}
+
+.neon a li.nav-link.projects {
   color: white;
 }
 
