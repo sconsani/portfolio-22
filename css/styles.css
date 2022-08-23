@@ -18,6 +18,7 @@ body {
 
 }
 
+
 .change-theme-text{
   font-family:'Patrick Hand';
   display:flex;
@@ -562,6 +563,7 @@ font-family: 'Roboto Mono', monospace;
   margin: auto;
   justify-content: space-evenly;
   margin-top: 20px;
+  width: 100%;
 }
 
 .left-about {
@@ -819,6 +821,7 @@ img.social-icon {
 
 
 
+
 /*-------media queries------*/
 
 @media(max-width: 1038px){
@@ -969,6 +972,43 @@ img.social-icon {
 	justify-content:center
 	}
 
+  /* @media(max-width: 1920px){
+    .canvasTitle{
+      width: unset !important;
+    }
+  } */
+
+  .blobText{
+    display:none;
+    position: absolute;
+    /* height: 199px;
+    width: 100%; */
+    top: 174px;
+    left: 819px;
+    /* display:flex; */
+  }
+
+  .canvas .liquid-name{
+    display:none;
+  }
+
+  .bubbletext img {
+    width: 100%;
+}
+
+.bubbletext {
+    max-width: 700px;
+    justify-content: center;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.notebook .bubbletext,
+.neon .bubbletext{
+  display:none;
+}
+
+
   .canvasTitle span{width:100%;position:relative;font-family:'Titan One',cursive;color: blue;}
 
 .canvasTitle span:before{
@@ -1107,15 +1147,7 @@ img.social-icon {
 	100%{border-radius:66% 34% 33% 67% / 65% 73% 27% 35%}
 	}
 
-  .blobText{
-    position: absolute;
-    height: 199px;
-    width: 100%;
-    top: 174px;
-    left: 819px;
-    display:flex;
-  }
-
+ 
   .page-header.neon .liquid-name{
     display:none;
   }
